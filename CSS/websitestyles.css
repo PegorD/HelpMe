@@ -61,8 +61,6 @@ h1 {
 
 #text {
     text-align: left;
-    padding-left: 1rem;
-    padding-right:1rem;
     float: left;
     width: 70%;
 }
@@ -71,7 +69,6 @@ h1 {
     text-align: center;
     width: 30%;
     margin-left: 70%;
-   
 }
 
 .textbox {
@@ -95,7 +92,6 @@ h1 {
 @media screen and (max-width: 900px) {
     #text {
         text-align: left;
-        padding-left: 1rem;
         float: none;
         width: 100%;
     }
@@ -104,6 +100,6 @@ h1 {
         text-align: center;
         width: 100%;
         margin-left: 0%;
-         padding-top:1rem;
+        padding-top: 1rem;
     }
 }
