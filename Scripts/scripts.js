@@ -2,16 +2,19 @@
 (function () {
 
 
-    var text = "Hello Alice, it's good to see that you have decided to help me.<br><br>"
-    + "I am trapped and I am in desperate need of your help.<br><br>"
-    + "Last night I managed to hack into The Matrix, and what I saw was amazing, but that is for another time.<br><br>"
-    + "When I came to leave The Matrix I was surprised to see that I couldn't.<br><br>"
-    + "After a quick debug I found out that a portion of my code which I had on a USB stick was missing.<br><br>"
-    + "So, I reviewed the feed from my webcam only to find out that He-Who-Must-Not-Be-Named had taken my USB stick,<br><br> to use as a Horcrux!!!<br><br>"
-    + "Fortunately, he left a clue behind, use it to find my USB stick so that I can escape The Matrix.<br><br>"
-    + "Insert Clue here.<br><br>"
-    + "Neo cannot protect me from Agent Smith for much longer.<br><br>"
-    + "Run Alice. Show me the meaning of haste.";
+
+
+    var text = "> Hello Alice, ^500 it's good to see that you have decided to help me.^500<br><br>"
+    + "> I am trapped ^500 and I am in desperate need of your help.^500<br><br>"
+    + "> Last night ^500 I managed to hack into The Matrix^500, and what I saw was amazing^500, but that is for another time.^500<br><br>"
+    + "> When I came to leave The Matrix ^500  I was surprised to see that I couldn't.^500<br><br>"
+    + "> After a quick debug ^500 I found out that a portion of my code which I had on a USB stick was missing.^500<br><br>"
+    + "> So^500, I reviewed the feed from my webcam ^500 only to find out that He-Who-Must-Not-Be-Named had taken my USB stick^1000, to use as a Horcrux!!!^500<br><br>"
+    + "> Fortunately^500, he left a clue behind^500, use it to find my USB stick so that I can escape The Matrix.^500<br><br>"
+    + "> Insert Clue here.^500<br><br>"
+    + "> Once you retrive my code^500, come back here to give me the code.^500<br><br>"
+    + "> Neo cannot protect me from Agent Smith for much longer.^500<br><br>"
+    + "> Run Alice. ^500  Show me the meaning of haste.^500<br><br>";
     $(document).ready(function () {
         $(function () {
             $("#text").typed({
@@ -25,5 +28,44 @@
         });
     });
 
+
+
+
 })();
 
+var code = "function ExitMatrix(person){\n"
+    + "connect.toRealWorld();\n"
+    + "connect.Extract(person);\n"
+    + "connect.Close();\n"
+    + "}"
+
+var success = "> Thank you for your help Alice.<br><br>"
+    + "> Now I am able to leave The Matrix.<br><br>"
+    + "> While you were busy, I managed to prepare a gift for you.<br><br>"
+    + "> In the USB stick you will find a ZIP file, use the password \"Pa$$w0rd\" to open it and view your gift.<br><br>";
+
+var fail = "> The code you have entered is wrong!<br><br>"
+    + "> Hurry Alice, I do not have much time left.<br><br>";
+
+function submitcode() {
+
+    if (code == $('.textbox').val()) {
+        $("#text").typed({
+            strings: [success],
+            typeSpeed: 10,
+            showCursor: false,
+            cursorChar: "_",
+            attr: null,
+            contentType: 'html'
+        });
+    } else {
+        $("#text").typed({
+            strings: [fail],
+            typeSpeed: 10,
+            showCursor: false,
+            cursorChar: "_",
+            attr: null,
+            contentType: 'html'
+        });
+    }
+}
