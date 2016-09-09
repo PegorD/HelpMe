@@ -1,0 +1,5 @@
+function ExitMatrix(person){
+connect.toRealWorld();
+connect.Extract(person);
+connect.Close();
+}
