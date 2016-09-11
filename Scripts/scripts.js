@@ -11,7 +11,7 @@
     + "> After a quick debug ^500 I found out that a portion of my code which I had on a USB stick was missing.^500<br><br>"
     + "> So^500, I reviewed the feed from my webcam ^500 only to find out that He-Who-Must-Not-Be-Named had taken my USB stick^1000, to use as a Horcrux!!!^500<br><br>"
     + "> Fortunately^500, he left a clue behind^500, use it to find my USB stick so that I can escape The Matrix.^500<br><br>"
-    + "> Insert Clue here.^500<br><br>"
+    + "> This is the clue: 66/2/222/222/2/222/44/33 22/77/444/3/4/33^500<br><br>"
     + "> Once you retrive my code^500, come back here to give me the code.^500<br><br>"
     + "> Neo cannot protect me from Agent Smith for much longer.^500<br><br>"
     + "> Run Alice. ^500  Show me the meaning of haste.^500<br><br>";
@@ -42,7 +42,7 @@ var code = "function ExitMatrix(person){\n"
 var success = "> Thank you for your help Alice.<br><br>"
     + "> Now I am able to leave The Matrix.<br><br>"
     + "> While you were busy, I managed to prepare a gift for you.<br><br>"
-    + "> In the USB stick you will find a ZIP file, use the password \"Pa$$w0rd\" to open it and view your gift.<br><br>";
+    + "> In the USB stick you will find a ZIP file, use the password \"P@$$w0rd\" to open it and view your gift.<br><br>";
 
 var fail = "> The code you have entered is wrong!<br><br>"
     + "> Hurry Alice, I do not have much time left.<br><br>";
